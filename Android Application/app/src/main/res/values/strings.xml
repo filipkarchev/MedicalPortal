@@ -1,0 +1,35 @@
+<resources>
+    <string name="internet_dialog_message">There seems to be no internet connection. Please connect to internet and try again.</string>
+    <string name="internet_dialog_title">No internet connection</string>
+    <string name="internet_dialog_retry">Retry</string>
+    <string name="internet_dialog_exit">Exit</string>
+
+    <string name="app_name">MedicalPortal</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="ask_question">Ask question</string>
+    <string name="save_consultation">Save Consultation</string>
+    <string name="log_in">Log in</string>
+    <string name="enter_text">Please, Enter in your profile</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="user">User</string>
+    <string name="profile_info">Profile information</string>
+    <string name="repeat_pass">Repeat password</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="medical_info">Medical information</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="speciality">Speciality</string>
+    <string name="hospital_address">Hospital address</string>
+    <string name="hospital_name">Hospital name</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="enter_as">Enter as</string>
+    <string name="wrong_credentials">\'Wrong Username or Password</string>
+    <string name="user_created">User created</string>
+    <string name="error_in_registration">Error in registration</string>
+    <string name="passwords_not_match">Passwords doesn\'t match</string>
+    <string name="categories">Categories</string>
+</resources>

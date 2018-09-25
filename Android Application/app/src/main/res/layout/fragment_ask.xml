@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/ll_select_type"
+        android:layout_below="@+id/txt_create_profile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="1dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_publication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="Publish question"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            ></View>
+        <Button
+            android:id="@+id/btn_doctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Ask doctor"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_publish_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_select_type"
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/txt_cat_title"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/categories"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_down"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/gray"
+                android:layout_toRightOf="@+id/iv_arrow"></View>
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rl_search"
+            android:background="@drawable/round_shape_white"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:numColumns="2"
+            android:padding="5dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:visibility="gone"
+            ></GridView>
+
+        <TextView
+            android:id="@+id/txt_publication_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_categories"
+            android:text="Publication Title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/et_publication_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_publication_title"
+            android:hint="Enter Publication title"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_shape_white"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_publication_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_publication_title"
+            android:text="Publication text"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_publication_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_publication_text"
+            android:hint="Enter Your question"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_shape_white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Publish"
+            android:textColor="@color/white"
+            android:background="@drawable/round_shape_blue"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ask_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:layout_below="@+id/ll_select_type"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_select_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Select Doctor"
+            android:textColor="@color/white"
+            android:background="@drawable/round_shape_blue"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_doctor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_select_doctor"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_doctor_picture"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/user_male"
+                />
+
+            <TextView
+                android:id="@+id/txt_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_doctor_picture"
+                android:text="Petat Petrov"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_doctor_speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_doctor_picture"
+                android:layout_below="@+id/txt_doctor_name"
+                android:text="Hiropractor"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <RatingBar
+                android:id="@+id/rb_doctor_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_cancel_doctor"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_question_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_doctor_profile"
+            android:text="Question Title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/et_question_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_question_title"
+            android:hint="Enter Question title"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_shape_white"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_question_title"
+            android:text="Your question"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_question_text"
+            android:hint="Enter Your question"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_shape_white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="150dp"/>
+
+        <Button
+            android:id="@+id/btn_ask_question"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ask Doctor"
+            android:textColor="@color/white"
+            android:background="@drawable/round_shape_blue"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/btn_ask_question"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/select_image"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

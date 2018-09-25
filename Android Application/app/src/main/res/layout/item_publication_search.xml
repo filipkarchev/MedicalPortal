@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:weightSum="7">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="4.5"
+        android:layout_height="75dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/txt_publication_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publication Titel"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txt_publication_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_publication_title"
+            android:text="some description abount this publication tralala asdasda asd asd a sd as da sdh asdhiausdhi asu dias dbiabsdias dbiasdi asbud iasudb iasbdn aisdbiasdb "
+            android:maxLines="3"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"></View>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_seen_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seen"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txt_seen_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_seen_title"
+            android:text="35"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"></View>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_answers_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/txt_answers_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_answers_title"
+            android:text="5"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

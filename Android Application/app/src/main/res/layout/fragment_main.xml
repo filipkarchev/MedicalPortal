@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/log_in"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_save_consultation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/save_consultation"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_above="@+id/btn_log_in"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_ask_question"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ask_question"
+        android:layout_margin="10dp"
+        android:background="@color/light_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_above="@+id/btn_save_consultation"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/search"
+        android:layout_margin="10dp"
+        android:background="@color/sky_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_above="@+id/btn_ask_question"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/medicine_icon"
+        android:layout_above="@+id/btn_search"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>
+
+
+

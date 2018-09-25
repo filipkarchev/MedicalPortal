@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_publication_data"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/border"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/txt_publication_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publication title"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="100dp"/>
+
+        <ScrollView
+            android:id="@+id/sv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txt_publication_title"
+            android:layout_marginRight="105dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:maxHeight="100dp">
+
+        <TextView
+            android:id="@+id/txt_publication_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text=" asda sd as das d as da sd as da sd a sd asdasdasdwqd as das da sd"
+            />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txt_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="15"
+                android:gravity="center"
+                android:textSize="25sp"/>
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/txt_vote"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/like"/>
+            <ImageView
+                android:id="@+id/iv_dislike"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:layout_toRightOf="@+id/iv_like"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/dislike"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/border"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/iv_creator"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/user_male"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_creator_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:text="Cteator name"
+                android:gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_publication_data"
+        android:layout_marginBottom="50dp"></ListView>
+
+    <Button
+        android:id="@+id/btn_add_comment"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_shape_blue"
+        android:layout_margin="10dp"
+        android:text="Add comment"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
